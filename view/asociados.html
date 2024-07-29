@@ -6,8 +6,105 @@
     <title>Listado de asociados</title>
 
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/asociado.css">
+
+    <link rel="icon" href="../imagenes/iconos/Logo-Verastica.ico">
 </head>
 <body>
-    
+    <header>
+        <div class="verastica-header">
+            <h1 class="verastica-header__nombre">
+                VERÁSTICA
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Observaciones</a></li>
+                    <li><a href="#">Formulario</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor-busqueda">
+            <input type="text" placeholder="Buscador">
+            <button>Buscar</button>
+        </div>
+        <div class="contenedor-tabla" style="display: block;">
+            <div class="contenedor-tabla__header">
+                <h3>Listado de Asociados</h3>
+                <span>Filtrar por</span>
+                <select name="filtro" id="filtro">
+                    <option value="todo">Todos</option>
+                    <option value="beneficiario">Beneficiarios</option>
+                    <option value="activo">Activos</option>
+                    <option value="inactivo">Inactivos</option>
+                    <option value="asesor">Asesores</option>
+                    <option value="colaborador">Colaboradores</option>
+                </select>
+                <button class="contenedor-tabla__header__nuevo">Nuevo</button>
+                <button class="contenedor-tabla__header__nav"><</button>
+                <button class="contenedor-tabla__header__nav">></button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Telefono</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7589dgd4</td>
+                        <td>Gabriel Enrique</td>
+                        <td>Carrillo Florez</td>
+                        <td>323-3053646</td>
+                        <td style="color: #3B4AE4;">Beneficiario</td>
+                    </tr>
+                    <tr>
+                        <td>7589dgd4</td>
+                        <td>Gabriel Enrique</td>
+                        <td>Carrillo Florez</td>
+                        <td>323-3053646</td>
+                        <td style="color: #6D9534;">Activo</td>
+                    </tr>
+                    <tr>
+                        <td>7589dgd4</td>
+                        <td>Gabriel Enrique</td>
+                        <td>Carrillo Florez</td>
+                        <td>323-3053646</td>
+                        <td style="color: #D9B234;">Inactivo</td>
+                    </tr>
+                    <tr>
+                        <td>7589dgd4</td>
+                        <td>Gabriel Enrique</td>
+                        <td>Carrillo Florez</td>
+                        <td>323-3053646</td>
+                        <td style="color: #FF7F50;">Asesor</td>
+                    </tr>
+                    <tr>
+                        <td>7589dgd4</td>
+                        <td>Gabriel Enrique</td>
+                        <td>Carrillo Florez</td>
+                        <td>323-3053646</td>
+                        <td style="color: #800080;">Colaborador</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="noencontrado" style="display: none;">
+            <div class="noencontrado__404">
+                <img src="../imagenes/iconos/no_encontrado.ico" alt="Icono de no encontrado">
+                <h2>404</h2>
+            </div>
+            <h3>No se encontraron resultados</h3>
+            <p>Lo sentimos, pero no pudimos encontrar a la persona que estás buscando en nuestra base de datos. Por favor, verifica la información ingresada o intenta nuevamente más tarde.</p>
+            <button>Recargar página</button>
+        </div>
+    </main>
 </body>
 </html>
