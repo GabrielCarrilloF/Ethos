@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --monserrat: "Montserrat", sans-serif;
+    --opneS: "Open Sans", sans-serif;
+    --raleway: "Raleway", sans-serif;
+
+    --verdeOscuro: #6D9534;
+    --verdeClaro: #91B043;
+    --naranja: #D9B234;
+    --blanco: #FFFFFF;
+    --azul: #3B4AE4;
+    --grisClaro: #D9D9D9;
+    --colorFondo: #F8FAFD;
+}
+
+/*Estilo de busqueda*/
+.contenedor-busqueda {
+    display: flex;
+    background-color: var(--blanco);
+    width: 1190px;
+    height: 60px;
+    border-radius: 15px;
+    margin-top: 18px;
+    margin-left: 105px;
+    gap: 18px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-busqueda input {
+    border: none;
+    margin-left: 74px;
+    margin-top: 2px;
+    height: 50px;
+    width: 940px;
+    font-size: 24px;
+    font-family: var(--opneS);
+    font-weight: 400;
+}
+.contenedor-busqueda input:focus {
+    outline: none;
+    border: none;
+}
+
+
+.contenedor-busqueda button {
+    border: none;
+    margin-right: 42px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    width: 149px;
+    height: 39px;
+    border-radius: 10px;
+    background-color: var(--azul);
+    color: var(--blanco);
+    font-size: 24px;
+    font-family: var(--raleway);
+    font-weight: 800;
+}
+.contenedor-busqueda button:hover {
+    cursor: pointer;
+}
+
+/*Estilo de paneles*/
+
+.contenedor-listado__titulo {
+    margin-left: 122px;
+    margin-top: 44px;
+    width: 382px;
+    font-size: 24px;
+    font-family: var(--raleway);
+    font-weight: 800;
+}
+
+.contenedor-listado__container {
+    margin-left: 122px;
+    margin-top: 30px;
+    width: 1170px;
+}
+
+.conenedor-listado__persona {
+    width: 208px;
+    height: 263px;
+    background-color: var(--blanco);
+    border: 1px solid #00000040;
+    border-radius: 15px;
+    margin-bottom: 37px;
+    margin-right: 37px;
+    transition: 0.5s;
+}
+.conenedor-listado__persona:hover {
+    cursor: pointer;
+    border: none;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.foto-perfil {
+    width: 115px;
+    height: 112px;
+    margin-left: 46px;
+    margin-right: 46px;
+    margin-top: 14px;
+}
+
+.conenedor-listado__persona h2 {
+    width: 177px;
+    text-align: center;
+    font-size: 12px;
+    font-family: var(--raleway);
+    font-weight: bold italic;
+}
+
+.cargo {
+    width: 177px;
+    margin-bottom: 21px;
+    text-align: center;
+    font-size: 10px;
+    font-family: var(--opneS);
+    font-weight: 400;
+}
+
+.contenedor-listado__persona__contactos__info {
+    display: flex;
+    margin-left: 14px;
+    margin-bottom: 12px;
+    gap: 4px;
+}
+
+
+.direccion {
+    width: 22px;
+    height: 26px;
+}
+
+.contenedor-listado__persona__contactos__info img {
+    width: 21px;
+    height: 19px;
+}
+
+
+.contenedor-listado__persona__contactos__info p {
+    width: 152px;
+    font-size: 10px;
+    font-family: var(--opneS);
+    font-weight: 400;
+    text-align: left;
+}
