@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de registros general</title>
+
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/asociado.css">
+
+    <link rel="icon" href="../imagenes/iconos/Logo-Verastica.ico">
+</head>
+<body>
+    <header>
+        <div class="verastica-header">
+            <h1 class="verastica-header__nombre">
+                VERÁSTICA
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Observaciones</a></li>
+                    <li><a href="#">Formulario</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor-busqueda">
+            <input type="text" placeholder="Buscador">
+            <button>Buscar</button>
+        </div>
+        <div class="contenedor-tabla" style="display: block;">
+            <div class="contenedor-tabla__header">
+                <h3>Listado de registros general</h3>
+                <button class="contenedor-tabla__header__nuevo">PDF</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Cedula</th>
+                        <th>Telefono</th>
+                        <th>Correo</th>
+                    </tr>
+                </thead>
+                <tbody id="data">
+                    <tr>
+                        <td>1</td>
+                        <td>Gabriel Enrique</td>
+                        <td>Carrillo Florez</td>
+                        <td>1.050.946.558</td>
+                        <td>323-3053646</td>
+                        <td>gabriel.carilloflorez@unicolombo.edu.co</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="noencontrado" style="display: none;">
+            <div class="noencontrado__404">
+                <img src="../imagenes/iconos/no_encontrado.ico" alt="Icono de no encontrado">
+                <h2>404</h2>
+            </div>
+            <h3>No se encontraron resultados</h3>
+            <p>Lo sentimos, pero no pudimos encontrar a la persona que estás buscando en nuestra base de datos. Por favor, verifica la información ingresada o intenta nuevamente más tarde.</p>
+            <button>Recargar página</button>
+        </div>
+    </main>
+</body>
+</html>
