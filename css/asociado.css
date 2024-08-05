@@ -64,7 +64,7 @@
 /*Estilo de la infomacion*/
 .contenedor-tabla {
     width: 1238px;
-    height: 546px;
+    height: auto;
     margin-left: 85px;
     margin-top: 30px;
     margin-bottom: 32px;

@@ -7,9 +7,9 @@ class userModel {
     }
 
     public function getGeneralData() {
-        $sql = "SELECT * FROM *nombre de la base de datos*";
-        $stmt = $this->db->query($sql);
-        return $stmt->fetch(PDO::FETCH_ASSOC);
+        $sql = "SELECT * FROM datosgenerales";
+        $stmt = $this->db->sectQuery($sql);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 }
 ?>

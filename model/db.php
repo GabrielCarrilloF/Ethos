@@ -7,7 +7,7 @@ class Database {
     public $conn;
 
     public function __construct() {
-        $config = include('config/config.php');
+        $config = include('confg/config.php');
 
         $this->host = $config['host'];
         $this->db_name = $config['db_name'];
@@ -24,6 +24,12 @@ class Database {
             echo "Error de conexión: " . $exception->getMessage();
         }
         return $this->conn;
+    }
+
+    public function sectQuery($sql, $params = []) {
+        $stmt = $this->getConnection()->prepare($sql);
+        $stmt->execute($params);
+        return $stmt;
     }
 }
 ?>
