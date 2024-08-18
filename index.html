@@ -3,82 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethos-Verastica</title>
-    
-    <link rel="stylesheet" href="css/header.css">
+    <title>Document</title>
+
     <link rel="stylesheet" href="css/index.css">
-    
-    <link rel="icon" href="imagenes/iconos/Logo-Ethos.ico">
+    <link rel="icon" href="imagenes/iconos/Logo-Verastica.ico">
 </head>
 <body>
-    <header>
-        <div class="ethos-header">
-            <img class="ethos-header__logo-ethos" src="imagenes/iconos/Logo-Ethos.ico" alt="Logo de Ethos Corporation">
-            <h3 class="ethos-header__nombre">
-                Ethos 
-                <span>Corporation</span>
-            </h3>
-            <p class="ethos-header__nombre-creador">
-                Ethos corporation
-                <span>Gabriel Carrillo</span>
-                <span>323-3053646</span>
+    <div class="container">
+        <div class="container__login">
+            <img src="imagenes/iconos/Logo-Verastica.ico" alt="Logo de Verastica Cañaveral">
+            <h2>Inicio de Miembros</h2>
+            <form action="">
+                <input type="email" name="userName" placeholder="Usuario">
+                <input type="password" name="password" placeholder="Contraseña">
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+        <div class="container__info">
+            <h1>Ethos Software</h1>
+            <p>Hola, recibe un caluroso saludo afro.</p>
+            <p>
+                Estás a punto de ingresar a Ethos Software, 
+                el sistema de gestión oficial del 
+                Consejo Comunitario de Comunidades Negras Verastica de 
+                Cañaveral. Recuerda que podrás acceder a las funciones 
+                del sistema según tu rol o cargo. Por favor, 
+                ingresa tu usuario y contraseña para comenzar a 
+                utilizar el software.
             </p>
+            <img src="imagenes/imagenesGeneral/afro.png" alt="Persona Afro">
         </div>
-        <div class="verastica-header">
-            <h1 class="verastica-header__nombre">
-                VERÁSTICA
-            </h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Eventos</a></li>
-                    <li><a href="#">Observaciones</a></li>
-                    <li><a href="#">Formulario</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <div class="contenedor">
-            <div class="contenedor__eventos">
-                <h3 class="contenedor__eventos__titulo">
-                    Crea un nuevo evento
-                </h3>
-                <p class="contenedor__eventos__parrafo">
-                    Esta acción te va a permitir crear un evento para organizar mejor 
-                    el itinerario y la agenda del consejo.
-                </p>
-                <button class="contenedor__eventos_nuevo-evento">Nuevo evento</button>
-            </div>
-            <img  src="imagenes/imagenesGeneral/Negra.webp" 
-            alt="Mujer negra con flores IA">
-        </div>
-        <div class="contenedor-op">
-            <div class="contenedor-op__btn">
-               <img src="imagenes/iconos/asociados .ico" alt="Icono de Asociados ">
-               <h3>Asociados</h3>
-               <p>Este es el listado de los miembros asociados del consejo comunitario.</p> 
-               <button>Listado</button>
-            </div>
-            <div class="contenedor-op__btn">
-                <img src="imagenes/iconos/admin.ico" alt="Icono de administradores ">
-                <h3 style="font-size: 16px;">Junta 
-                    Adminitsreadora</h3>
-                <p>Este es el listado de los miembros de la junta administrativa del consejo comunitario.</p> 
-                <button>Listado</button>
-             </div>
-             <div class="contenedor-op__btn">
-                <img src="imagenes/iconos/agenda.ico" alt="Icono de Agenda">
-                <h3>Agenda</h3>
-                <p>Consulta el calendario de eventos programados y sus respectivas fechas.</p> 
-                <button>Calendario</button>
-             </div>
-        </div>
-    </main>
-
-    <footer>
-
-    </footer>
+    </div>
 </body>
 </html>
