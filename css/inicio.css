@@ -130,3 +130,10 @@
 .contenedor-op__btn button:hover {
     cursor: pointer;
 }
+
+.contenedor-op__btn button a{
+    text-decoration: none;
+    font-size: 12px;
+    font-family: var(--opneS);
+    font-weight: 600;
+}

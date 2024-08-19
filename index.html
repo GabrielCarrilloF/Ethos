@@ -7,15 +7,17 @@
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="imagenes/iconos/Logo-Verastica.ico">
+
+    <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script>​​​ 
 </head>
 <body>
     <div class="container">
         <div class="container__login">
             <img src="imagenes/iconos/Logo-Verastica.ico" alt="Logo de Verastica Cañaveral">
             <h2>Inicio de Miembros</h2>
-            <form action="">
-                <input type="email" name="userName" placeholder="Usuario">
-                <input type="password" name="password" placeholder="Contraseña">
+            <form action="controller/login.php" method="post">
+                <input type="email" name="userName" placeholder="Usuario" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
                 <button type="submit">Ingresar</button>
             </form>
         </div>
@@ -34,5 +36,20 @@
             <img src="imagenes/imagenesGeneral/afro.png" alt="Persona Afro">
         </div>
     </div>
+
+    <script src="view/JS/aler.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const error = urlParams.get('error');
+
+            if (error) {
+                errorAler('¡Ups!','Usuario o contraseña incorecta');
+                const url = new URL(window.location.href);
+                url.search = '';
+                window.history.replaceState({}, '', url);
+            }
+        });
+    </script>
 </body>
 </html>
